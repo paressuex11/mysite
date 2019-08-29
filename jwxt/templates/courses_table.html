@@ -1,0 +1,126 @@
+﻿<style>
+
+td{
+    text-align: center;
+}
+</style>
+<div id="myTabContent2" class="tab-content" >
+    <div class="tab-pane fade in active">
+                <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>节次</th>
+                <th>星期日</th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+                <th>星期六</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope" style="">
+                <td class="ng-binding">第1节 <br>（08:00~08:45）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding">计算机组成原理<br>农革<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">马克思主义基本原理<br>李丽<br>教学大楼B栋东B205</div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">计算机组成原理<br>农革<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">马克思主义基本原理<br>李丽<br>教学大楼B栋东B205</div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第2节 <br>（08:55~09:40）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding">计算机组成原理<br>农革<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">马克思主义基本原理<br>李丽<br>教学大楼B栋东B205</div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">计算机组成原理<br>农革<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">马克思主义基本原理<br>李丽<br>教学大楼B栋东B205</div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第3节 <br>（10:00~10:45）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding">概率论与数理统计<br>郑培嘉<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">数据结构与算法<br>吴向军<br>教学大楼C栋东C403</div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">计算机组成原理实验<br>农革<br>实验中心大楼C栋实验中心C102</div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">数据结构与算法实验<br>吴向军<br>实验中心大楼D栋东校实验中心D501</div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第4节 <br>（10:55~11:40）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding">概率论与数理统计<br>郑培嘉<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">数据结构与算法<br>吴向军<br>教学大楼C栋东C403</div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">计算机组成原理实验<br>农革<br>实验中心大楼C栋实验中心C102</div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">数据结构与算法实验<br>吴向军<br>实验中心大楼D栋东校实验中心D501</div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第5节 <br>（14:20~15:05）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">概率论与数理统计<br>郑培嘉<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">数据结构与算法<br>吴向军<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第6节 <br>（15:15~16:00）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">概率论与数理统计<br>郑培嘉<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">数据结构与算法<br>吴向军<br>教学大楼C栋东C104</div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第7节 <br>（16:20~17:05）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding">Web 2.0程序设计<br>王青<br>实验中心大楼D栋东校实验中心D501</div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">Java与面向对象设计<br>陈武辉<br>实验中心大楼D栋东校实验中心D501</div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第8节 <br>（17:15~18:00）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding">Web 2.0程序设计<br>王青<br>实验中心大楼D栋东校实验中心D501</div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">Java与面向对象设计<br>陈武辉<br>实验中心大楼D栋东校实验中心D501</div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第9节 <br>（19:00~19:45）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">机器学习基础（核心通识）<br>王变琴<br>北实验楼B203</div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第10节 <br>（19:55~20:40）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">机器学习基础（核心通识）<br>王变琴<br>北实验楼B203</div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
+                <td class="ng-binding">第11节 <br>（20:50~21:35）</td>
+                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
+                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
+            </tr><!-- end ngRepeat: item in sectionList -->
+            </tbody>
+        </table>
+    </div>
+</div>
