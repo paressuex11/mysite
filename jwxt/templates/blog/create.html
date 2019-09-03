@@ -1,4 +1,4 @@
-{% entends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 {% load staticfiles %}
 {% block title %} 写文章 {% endblock title %}
 <!-- 写入 base.html 中定义的 content -->
@@ -9,7 +9,7 @@
         <div class="col-12">
             <br>
             <!-- 提交文章的表单 -->
-            <form method="post" action=".">
+            <form method="post">
                 <!-- Django中需要POST数据的地方都必须有csrf_token -->
                 {% csrf_token %}
                 <!-- 文章标题 -->
