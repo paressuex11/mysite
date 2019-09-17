@@ -21,7 +21,13 @@ def get_detail(request, id):
     import markdown
     article = ArticlePost.objects.get(id = id)
 
-    article.body = markdown.markdown(article.body,
+    article.body = markdown.markdown("""<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$']]},
+        messageStyle: "none"
+    });
+</script>""" + article.body,
         extensions=[
         # 包含 缩写、表格等常用扩展
         'markdown.extensions.extra',
