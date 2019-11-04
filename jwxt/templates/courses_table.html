@@ -1,126 +1,703 @@
-﻿<style>
+﻿<html>
 
-td{
+<head></head>
+<style>
+*{
     text-align: center;
 }
 </style>
-<div id="myTabContent2" class="tab-content" >
-    <div class="tab-pane fade in active">
-                <table class="table table-bordered">
-            <thead>
+<body>
+    <table class="">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead class="ant-table-thead">
             <tr>
-                <th>节次</th>
-                <th>星期日</th>
-                <th>星期一</th>
-                <th>星期二</th>
-                <th>星期三</th>
-                <th>星期四</th>
-                <th>星期五</th>
-                <th>星期六</th>
+                <th class=""><span>
+                        <div class="index-textCenter-19Q_c">节次</div>
+                    </span></th>
+                <th class=""><span>
+                        <div class="index-textCenter-19Q_c">星期日</div>
+                    </span></th>
+                <th class=""><span>
+                        <div class="index-textCenter-19Q_c">星期一</div>
+                    </span></th>
+                <th class=""><span>
+                        <div class="index-textCenter-19Q_c">星期二</div>
+                    </span></th>
+                <th class=""><span>
+                        <div class="index-textCenter-19Q_c">星期三</div>
+                    </span></th>
+                <th class=""><span>
+                        <div class="index-textCenter-19Q_c">星期四</div>
+                    </span></th>
+                <th class=""><span>
+                        <div class="index-textCenter-19Q_c">星期五</div>
+                    </span></th>
+                <th class=""><span>
+                        <div class="index-textCenter-19Q_c">星期六</div>
+                    </span></th>
             </tr>
-            </thead>
-            <tbody>
-            <!-- ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope" style="">
-                <td class="ng-binding">第1节 <br>（08:00~08:45）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding">计算机组成原理<br>农革<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">马克思主义基本原理<br>李丽<br>教学大楼B栋东B205</div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">计算机组成原理<br>农革<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">马克思主义基本原理<br>李丽<br>教学大楼B栋东B205</div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第2节 <br>（08:55~09:40）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding">计算机组成原理<br>农革<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">马克思主义基本原理<br>李丽<br>教学大楼B栋东B205</div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">计算机组成原理<br>农革<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">马克思主义基本原理<br>李丽<br>教学大楼B栋东B205</div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第3节 <br>（10:00~10:45）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding">概率论与数理统计<br>郑培嘉<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">数据结构与算法<br>吴向军<br>教学大楼C栋东C403</div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">计算机组成原理实验<br>农革<br>实验中心大楼C栋实验中心C102</div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">数据结构与算法实验<br>吴向军<br>实验中心大楼D栋东校实验中心D501</div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第4节 <br>（10:55~11:40）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding">概率论与数理统计<br>郑培嘉<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">数据结构与算法<br>吴向军<br>教学大楼C栋东C403</div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">计算机组成原理实验<br>农革<br>实验中心大楼C栋实验中心C102</div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">数据结构与算法实验<br>吴向军<br>实验中心大楼D栋东校实验中心D501</div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第5节 <br>（14:20~15:05）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">概率论与数理统计<br>郑培嘉<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">数据结构与算法<br>吴向军<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第6节 <br>（15:15~16:00）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">概率论与数理统计<br>郑培嘉<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding">数据结构与算法<br>吴向军<br>教学大楼C栋东C104</div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第7节 <br>（16:20~17:05）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding">Web 2.0程序设计<br>王青<br>实验中心大楼D栋东校实验中心D501</div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">Java与面向对象设计<br>陈武辉<br>实验中心大楼D栋东校实验中心D501</div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第8节 <br>（17:15~18:00）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding">Web 2.0程序设计<br>王青<br>实验中心大楼D栋东校实验中心D501</div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding">Java与面向对象设计<br>陈武辉<br>实验中心大楼D栋东校实验中心D501</div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第9节 <br>（19:00~19:45）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">机器学习基础（核心通识）<br>王变琴<br>北实验楼B203</div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第10节 <br>（19:55~20:40）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding">机器学习基础（核心通识）<br>王变琴<br>北实验楼B203</div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList --><tr ng-repeat="item in sectionList" class="ng-scope">
-                <td class="ng-binding">第11节 <br>（20:50~21:35）</td>
-                <td><div ng-bind-html="courseList[$index].sunday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].monday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].tuesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].wednesday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].thursday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].friday|break" class="ng-binding"></div></td>
-                <td><div ng-bind-html="courseList[$index].saturday|break" class="ng-binding"></div></td>
-            </tr><!-- end ngRepeat: item in sectionList -->
-            </tbody>
-        </table>
-    </div>
-</div>
+        </thead>
+        <tbody class="ant-table-tbody">
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="0">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第一节</p>
+                        <p style="color: rgb(125, 210, 160);">08:00~08:45</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="计算机组成原理"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                计算机组成原理</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="农革">农革</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼C栋东C104"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼C栋东C104</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="马克思主义基本原理"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                马克思主义基本原理</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="李丽">李丽</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼B栋东B205"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼B栋东B205</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="计算机组成原理"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                计算机组成原理</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="农革">农革</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼C栋东C104"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼C栋东C104</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="1">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第二节</p>
+                        <p style="color: rgb(125, 210, 160);">08:55~09:40</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="计算机组成原理"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                计算机组成原理</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="农革">农革</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼C栋东C104"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼C栋东C104</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="马克思主义基本原理"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                马克思主义基本原理</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="李丽">李丽</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼B栋东B205"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼B栋东B205</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="计算机组成原理"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                计算机组成原理</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="农革">农革</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼C栋东C104"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼C栋东C104</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="2">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第三节</p>
+                        <p style="color: rgb(125, 210, 160);">10:00~10:45</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="计算机组成原理实验"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                计算机组成原理实验</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="农革">农革</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="实验中心大楼C栋实验中心C102"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                实验中心大楼C栋实验中心C102</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="数据结构与算法实验"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                数据结构与算法实验</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="吴向军">吴向军</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="实验中心大楼D栋东校实验中心D501"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                实验中心大楼D栋东校实验中心D501</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="3">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第四节</p>
+                        <p style="color: rgb(125, 210, 160);">10:55~11:40</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="计算机组成原理实验"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                计算机组成原理实验</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="农革">农革</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="实验中心大楼C栋实验中心C102"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                实验中心大楼C栋实验中心C102</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="数据结构与算法实验"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                数据结构与算法实验</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="吴向军">吴向军</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="实验中心大楼D栋东校实验中心D501"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                实验中心大楼D栋东校实验中心D501</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="4">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第五节</p>
+                        <p style="color: rgb(125, 210, 160);">14:20~15:05</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="体育 篮球"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                体育 篮球</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="王国咏">王国咏</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title=""
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                            </p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="概率论与数理统计"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                概率论与数理统计</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="郑培嘉">郑培嘉</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼C栋东C104"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼C栋东C104</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="数据结构与算法"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                数据结构与算法</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="吴向军">吴向军</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼C栋东C104"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼C栋东C104</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="5">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第六节</p>
+                        <p style="color: rgb(125, 210, 160);">15:15~16:00</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="体育 篮球"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                体育 篮球</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="王国咏">王国咏</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title=""
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                            </p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="概率论与数理统计"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                概率论与数理统计</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="郑培嘉">郑培嘉</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼C栋东C104"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼C栋东C104</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="数据结构与算法"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                数据结构与算法</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="吴向军">吴向军</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="教学大楼C栋东C104"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                教学大楼C栋东C104</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="6">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第七节</p>
+                        <p style="color: rgb(125, 210, 160);">16:20~17:05</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="Web 2.0程序设计"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                Web 2.0程序设计</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="王青">王青</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="实验中心大楼D栋东校实验中心D501"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                实验中心大楼D栋东校实验中心D501</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="Java与面向对象设计"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                Java与面向对象设计</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="陈武辉">陈武辉</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="实验中心大楼D栋东校实验中心D501"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                实验中心大楼D栋东校实验中心D501</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="7">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第八节</p>
+                        <p style="color: rgb(125, 210, 160);">17:15~18:00</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="Web 2.0程序设计"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                Web 2.0程序设计</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="王青">王青</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="实验中心大楼D栋东校实验中心D501"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                实验中心大楼D栋东校实验中心D501</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="Java与面向对象设计"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                Java与面向对象设计</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="陈武辉">陈武辉</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="实验中心大楼D栋东校实验中心D501"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                实验中心大楼D栋东校实验中心D501</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="8">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第九节</p>
+                        <p style="color: rgb(125, 210, 160);">19:00~19:45</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="机器学习基础（核心通识）"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                机器学习基础（核心通识）</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="王变琴">王变琴</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="北实验楼B203"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                北实验楼B203</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="9">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第十节</p>
+                        <p style="color: rgb(125, 210, 160);">19:55~20:40</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ">
+                        <h4>
+                            <p title="机器学习基础（核心通识）"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                机器学习基础（核心通识）</p>
+                        </h4>
+                        <div class="index-textColor-2fVHT"><i class="anticon anticon-user index-iconUser-kC9yn"></i>
+                            <p class="index-userName-1QL6R" title="王变琴">王变琴</p>
+                        </div>
+                        <div class="index-textColor-2fVHT"><i
+                                class="anticon anticon-environment-o index-iconEnvironment-IYvni"></i>
+                            <p class="index-textContent-1wOlH" title="北实验楼B203"
+                                style="width: 99%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 1.5;">
+                                北实验楼B203</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+            <tr class="ant-table-row  ant-table-row-level-0" data-row-key="10">
+                <td class=""><span class="ant-table-row-indent indent-level-0" style="padding-left: 0px;"></span>
+                    <div class="index-textCenter-19Q_c">
+                        <p>第十一节</p>
+                        <p style="color: rgb(125, 210, 160);">20:50~21:35</p>
+                    </div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+                <td class="">
+                    <div class="index-tableContent-2cYgQ"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
